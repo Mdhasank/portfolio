@@ -71,8 +71,6 @@
 //   );
 // }
 
-"use client";
-
 import React, { useState, useEffect, useId, useRef } from "react";
 import { motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
@@ -115,7 +113,7 @@ export function ColourfulText({
       animate={{ width }}
       transition={{ duration: animationDuration / 2000 }}
      className={twMerge(
-  "relative inline-block rounded-lg pt-2 pb-2 text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-2",
+  "relative inline-block rounded-lg pt-2 pb-2 text-center text-5xl lg:text-6xl font-bold text-white mt-2",
   // Light mode: soft indigo/blue glow background
   "[background:linear-gradient(to_bottom,#e0e7ff,#c7d2fe)]",
   "shadow-[inset_0_-1px_#c7d2fe,inset_0_0_0_1px_#c7d2fe,_0_4px_8px_rgba(99,102,241,0.3)]",

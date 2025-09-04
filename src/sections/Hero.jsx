@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <Section
       id="hero"
-      className="pt-20 md:pt-32 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-1 px-4 overflow-hidden min-h-screen"
+      className="md:pt-32 pb-0 md:pb-28 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-1 px-4 overflow-hidden min-h-screen"
     >
       {/* Left Side */}
       <div className="flex items-center justify-center flex-col">
@@ -18,7 +18,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center z-10"
+          className="text-5xl lg:text-6xl font-extrabold leading-tight text-center z-10"
         >
           Building Digital Presence <br />
           <ColourfulText />
@@ -28,17 +28,17 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.7 }}
-          className="relative mt-6 max-w-xl mx-auto md:mx-0 text-sm sm:text-base md:text-lg text-white/70 text-center"
+          className="relative mt-6 max-w-xl mx-auto md:mx-0 text-base md:text-lg text-white/70 text-center"
         >
-          <span>
+          <p>
             Turning ideas into production-ready web applications. Combining
             cutting-edge frontend technologies with robust backend solutions and
             cloud infrastructure for experiences that scale.
-          </span>
+          </p>
         </motion.div>
 
         {/* Buttons */}
-        <div className="mt-8 flex justify-center gap-3 scale-90 sm:scale-100 max-w-full overflow-x-auto">
+        <div className="mt-8 flex justify-center gap-3 scale-110 md:scale-100 max-w-full overflow-x-auto">
           {/* Primary Button - View Projects */}
           <a
             href="#projects"

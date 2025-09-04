@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import { motion } from "motion/react";
 import {
   Sparkles,
@@ -18,8 +17,9 @@ import {
 import { NAME, ROLE } from "../data";
 import { Highlighter } from "../components/ui/Highliter";
 import { GlobeDemo } from "../components/ui/GlobeDemo";
+import Section from "../components/Section";
 
-export default function AboutV3({
+export default function About({
   location = "Remote / India",
   availability = "Open to freelance",
   projects = "8+",
@@ -80,22 +80,12 @@ export default function AboutV3({
 
   return (
     <>
-      <Helmet>
-        <title>About — {NAME}</title>
-        <meta
-          name="description"
-          content={`${NAME} — ${ROLE || "Full‑Stack Developer"}. Building fast, accessible UIs and reliable APIs with React, Node.js, and AWS. ${availability}.`}
-        />
-      </Helmet>
-
-      <section id="about" className="relative isolate py-20 sm:py-28">
+      <Section id="about" className="relative isolate pt-0 md:pt-28">
         {/* soft gradient backdrop */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-x-0 -top-32 -z-10 h-80 bg-gradient-to-tr from-indigo-500/10 via-fuchsia-500/10 to-cyan-500/10 blur-3xl"
         />
-
-        <div className="mx-auto max-w-6xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -195,8 +185,7 @@ export default function AboutV3({
               </div>
             </div>
           </motion.div>
-        </div>
-      </section>
+      </Section>
     </>
   );
 }
