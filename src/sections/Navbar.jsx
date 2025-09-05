@@ -1,3 +1,4 @@
+import { GradientButton } from "../components/GradientButton";
 import {
   TopNav,
   NavBody,
@@ -14,16 +15,28 @@ import { useState } from "react";
 export function Navbar() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Home",
+      link: "#Hero",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "About",
+      link: "#About",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Skills",
+      link: "#skills",
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Experience",
+      link: "#experience",
+    },
+     {
+      name: "Testimonials",
+      link: "#testimonials",
     },
   ];
 
@@ -37,8 +50,9 @@ export function Navbar() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
+            {/* <NavbarButton variant="primary">Get In Touch</NavbarButton> */}
+            <GradientButton/>
           </div>
         </NavBody>
 
@@ -62,12 +76,12 @@ export function Navbar() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <NavbarButton
+              {/* <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full">
                 Login
-              </NavbarButton>
+              </NavbarButton> */}
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"

@@ -31,18 +31,6 @@ export default function About({
   onContact,       // can be a function or a URL string
   onDownloadCV,    // can be a function or a URL string
 }) {
-  const handleContact = () => {
-    if (typeof onContact === "function") return onContact();
-    if (typeof onContact === "string") return window.open(onContact, "_blank");
-    const el = document.getElementById("contact");
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const handleDownloadCV = () => {
-    if (typeof onDownloadCV === "function") return onDownloadCV();
-    if (typeof onDownloadCV === "string") return window.open(onDownloadCV, "_blank");
-    // window.open("/resume.pdf", "_blank");
-  };
 
   // Services grid
   const services = [
@@ -84,7 +72,7 @@ export default function About({
         {/* soft gradient backdrop */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 -top-32 -z-10 h-80 bg-gradient-to-tr from-indigo-500/10 via-fuchsia-500/10 to-cyan-500/10 blur-3xl"
+          className="pointer-events-none absolute inset-x-0 -top-32 -z-10 h-80 "
         />
           <motion.div
             initial={{ opacity: 0, y: 12 }}

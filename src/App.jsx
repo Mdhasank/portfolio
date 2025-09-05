@@ -72,11 +72,11 @@ export default function App() {
   return (
     <div
       className={classNames(
-        "min-h-screen bg-neutral-950 text-white",
-        theme === "light" && "bg-neutral-50 text-neutral-900"
+        "min-h-screen bg-black text-white",
       )}
     >
-    <BackgroundGlow />
+    {/* <BackgroundGlow /> */}
+    
       <Helmet>
         <title>{`${NAME} — Portfolio`}</title>
         <meta name="description" content={TAGLINE} />

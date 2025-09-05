@@ -1,17 +1,30 @@
 import Section from "../components/Section";
-// import TextHoverEffect from "../components/ui/TextHoverEffect";
 import { motion } from "framer-motion";
 import { NAME } from "../data";
 import { ColourfulText } from "../components/ui/ColourfulText";
 import { FolderOpen, Mail } from "lucide-react";
 import { Highlighter } from "../components/ui/Highliter";
+import Beams from "../components/ui/Beams";
 
 const Hero = () => {
   return (
     <Section
       id="hero"
-      className="md:pt-32 pb-0 md:pb-28 flex flex-col md:flex-row items-center justify-center gap-12 md:gap-1 px-4 overflow-hidden min-h-screen"
+      className="relative md:pt-32 pb-0 md:pb-28 px-4 overflow-hidden min-h-screen"
     >
+    <div className="absolute w-full h-full top-0 left-0">
+       <Beams
+    beamWidth={3}
+    beamHeight={30}
+    beamNumber={20}
+    lightColor="#bb9af9"
+    
+    speed={2.8}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={30}
+  />
+    </div>
       {/* Left Side */}
       <div className="flex items-center justify-center flex-col">
         <motion.h1
@@ -42,7 +55,7 @@ const Hero = () => {
           {/* Primary Button - View Projects */}
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 rounded-lg border border-indigo-400/20 bg-indigo-500/10 px-4 sm:px-5 py-2 text-sm sm:text-base font-medium text-white backdrop-blur-md transition hover:bg-indigo-500/20 hover:border-indigo-400/40 whitespace-nowrap"
+            className="inline-flex items-center gap-2 rounded-lg border border-[#2a1358]/70 bg-[#2a1358]/30 px-4 sm:px-5 py-2 text-sm sm:text-base font-medium text-white backdrop-blur-md transition hover:bg-[#2a1358]/20 hover:[#2a1358]/40 whitespace-nowrap"
           >
             <FolderOpen size={16} className="sm:size-5" />
             View Projects
