@@ -16,10 +16,12 @@ const Preloader = ({ done }) => (
           transition={{ repeat: Infinity, repeatType: "mirror", duration: 1.2 }}
           className="text-center"
         >
-          <div className="text-5xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-violet-400">
-            MHK
+    <div className="text-5xl py-2 font-black tracking-tight bg-gradient-to-b from-[#5528b0] to-[#25155a] bg-clip-text text-transparent">
+            Loading...
           </div>
-          <div className="mt-2 text-xs text-white/60">Loading experience…</div>
+          <div className="mt-2 text-xs text-white/60">
+            Please wait while the content loads.
+           </div>
         </motion.div>
       </motion.div>
     )}

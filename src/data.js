@@ -63,25 +63,62 @@ export const PROJECTS = [
 
 export const EXPERIENCE = [
   {
-    company: "Intelli Market Solutions",
-    role: "Frontend Developer Intern → Engineer",
-    period: "2024 — 2025",
+    role: "Freelance Full‑Stack Developer",
+    company: "Remote • India",
+    period: "2025 — Present",
     points: [
-      "Built responsive, high-performance UIs with React + Tailwind",
-      "Improved Lighthouse score to 95+ via lazy loading & code splitting",
-      "Led component refactor with accessibility-first design",
+      "Design and ship React + Tailwind interfaces with subtle Motion animations for smooth UX.",
+      "Build Node/Express REST APIs with routing, validation, and JWT-based authentication.",
+      "Set up AWS foundations (S3 static hosting, simple EC2 deploys, environment configs, CI basics).",
+      "Collaborate via GitHub with scoped issues, PR reviews, and versioned releases.",
     ],
   },
   {
-    company: "Freelance",
-    role: "Fullstack Developer",
-    period: "2023 — Present",
+    role: "DealsHub Marketplace (Case Study)",
+    company: "Personal Project",
+    period: "2025",
     points: [
-      "Delivered MERN apps with CI/CD on Vercel/Netlify",
-      "Designed interactive experiences with Framer Motion & Three.js",
+      "Productized listing flow (cars, homes, jobs/services) with search, filters, and role-based UI.",
+      "Implemented modular UI components and a clean design system to speed iteration.",
+      "Structured API and data models to enable future payments and verification workflows.",
+      "Deployed a demo build with environment separation for safe iteration.",
+    ],
+  },
+  {
+    role: "Portfolio Platform",
+    company: "Personal Project",
+    period: "2025",
+    points: [
+      "Built a fast React 19 + Vite portfolio with SEO-friendly meta, social previews, and clean routing.",
+      "Implemented responsive sections (About, Skills, Projects, Experience) with layout-stable motion.",
+      "Adopted reusable cards, chips, and grids for maintainable UI across pages.",
+      "Automated build steps and preview deploys for rapid feedback.",
+    ],
+  },
+  {
+    role: "AWS Learning Labs",
+    company: "Self‑Directed",
+    period: "2025",
+    points: [
+      "Created a VPC in the Mumbai region with multiple subnets across AZs for isolation and availability.",
+      "Practiced secure access patterns and basic networking (route tables, gateways, security groups).",
+      "Deployed sample apps/static sites and documented repeatable steps for future projects.",
+      "Captured architecture notes to inform future cost‑aware deployments.",
+    ],
+  },
+  {
+    role: "HTML5 Game — Tetris (JS)",
+    company: "Personal Project",
+    period: "2025",
+    points: [
+      "Implemented grid logic, piece rotation, line detection, and scoring with clean state updates.",
+      "Optimized input handling and render loops for smooth play on desktop and mobile.",
+      "Refactored modules for readability and incremental feature additions.",
+      "Used Git for iterative changes and reproducible builds.",
     ],
   },
 ];
+
 
 export const BLOG = [
   { title: "Why I moved to Vite + SWC", date: "2025-06-12", excerpt: "Blazing fast DX with modern tooling...", href: "#" },

@@ -93,7 +93,7 @@ export default function About({
                 
                 <h1 className="mt-2 text-xl md:3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
                 Hi, I’m {" "}
-                <Highlighter action="underline" color="violet">{NAME}</Highlighter>
+                <Highlighter action="underline" color="#5b2bbc">{NAME}</Highlighter>
                   . I build end‑to‑end products as a {ROLE || "Full‑Stack Developer"}.
                 </h1>
 
